@@ -8,8 +8,6 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -18,3 +16,5 @@ const styles = StyleSheet.create({
         alignItems: "center"
     }
 })
+
+export default SignUp

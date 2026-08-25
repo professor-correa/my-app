@@ -1,4 +1,4 @@
-import { Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 const ForgotPassword = () => {
     let username = "Janete"
@@ -8,5 +8,7 @@ const ForgotPassword = () => {
         </View>
     )
 }  
+
+const styles = StyleSheet.create({})
 
 export default ForgotPassword
