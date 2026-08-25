@@ -1,19 +1,18 @@
 import { Text, View, StyleSheet } from "react-native";
 
-export default function Login() {
+const SignUp = () => {
     return (
-        <View style={styles.container}>
-
-            
-            <Text>Sou Login</Text>
+        <View style={styles.container}>   
+            <Text>Sign Up</Text>
         </View>
     )
 }
 
+export default SignUp
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "blue",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
