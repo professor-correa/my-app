@@ -1,5 +1,5 @@
-import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import { useNavigation } from "@react-navigation/native"
+import { Btn, BtnTitle, Container, Title } from "./style"
 
 
 const ForgotPassword = () => {
@@ -7,13 +7,13 @@ const ForgotPassword = () => {
     const navigation = useNavigation()
     
     return ( 
-        <View>
-            <Text>Forgot Password</Text>
-            <TouchableOpacity 
+        <Container>
+            <Title>Forgot Password</Title>
+            <Btn 
                 onPress={() => navigation.navigate("SignIn")}>
-                <Text>Sign In</Text>
-            </TouchableOpacity>
-        </View>
+                <BtnTitle>Sign In</BtnTitle>
+            </Btn>
+        </Container>
     )
 }  
 
