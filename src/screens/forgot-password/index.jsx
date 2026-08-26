@@ -17,6 +17,4 @@ const ForgotPassword = () => {
     )
 }  
 
-const styles = StyleSheet.create({})
-
 export default ForgotPassword

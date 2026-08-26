@@ -1,5 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
+import { styles } from "./style";
 
 const SignUp = () => {
 
@@ -14,14 +15,5 @@ const SignUp = () => {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-    }
-})
 
 export default SignUp
