@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Pressable, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
-import { FPassword, SignIn, SignUp } from "./src/screens"
-import DetailsModal from './src/components/modal';
+import { FPassword, SignIn, SignUp } from "@screens/"
+import DetailsModal from '@components/modal';
 
 const Stack = createNativeStackNavigator()
 
