@@ -1,12 +1,12 @@
 import styled from "styled-components/native";
 
-const Overlay = styled.TouchableOpacity`
+const Overlay = styled.View`
     flex: 1;
     justify-content: flex-end;
 `
 
 const Container = styled.View`
-    height: 50%;
+    height: 40%;
     background-color: white;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -23,7 +23,7 @@ const IconCircle = styled.View`
     width: 72px;
     height: 72px;
     border-radius: 72px;
-    background-color: green;
+    background-color: ${props => props.$type == "success" ? "green" : "red"};
 
     display: flex;
     justify-content: center;

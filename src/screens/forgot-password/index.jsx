@@ -13,11 +13,13 @@ const ForgotPassword = () => {
                 <BtnTitle>Sign In</BtnTitle>
             </Btn>
             <Btn 
-                onPress={() => navigation.navigate("DetailsModal")}>
-                <BtnTitle>Details Modal</BtnTitle>
+                onPress={() => navigation.navigate("DetailsModal", { 
+                    title: "Feito",
+                    description:"Senha alterada com sucesso!", 
+                    type: "success" })}>
+                <BtnTitle>Details Modal Success</BtnTitle>
             </Btn>
         </Container>
-    )
-}  
+    ) }  
 
 export default ForgotPassword

@@ -3,20 +3,22 @@ import * as DM from "./style"
 import { useNavigation } from "@react-navigation/native"
 import { FontAwesome6 } from "@expo/vector-icons"
 
-const DetailsModal = () => {
+const DetailsModal = ({ route }) => {
     const navigation = useNavigation()
+    const { description, title, type } = route.params;
+    
     return (
-        <DM.Overlay onPress={() => navigation.goBack()}>
+        <DM.Overlay>
             <DM.Container>
-                <DM.IconCircle>
+                <DM.IconCircle $type={type == "success" && "success"} >
                     <FontAwesome6 
-                        name="check"
+                        name={type == "success" ? "check" : "xmark"}
                         size={32}
                         color="white"
                     />
                 </DM.IconCircle>
-                <DM.Title>Title</DM.Title>
-                <DM.Description>DMescription</DM.Description>
+                <DM.Title>{title}</DM.Title>
+                <DM.Description>{description}</DM.Description>
                 <DM.CloseBtn onPress={() => navigation.goBack()}>
                     <FontAwesome6 
                         name="xmark"
