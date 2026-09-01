@@ -1,5 +1,4 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
@@ -18,7 +17,7 @@ const RootStack = () => {
         presentation: "transparentModal", animation: "slide_from_bottom" }}>
         <Stack.Screen
           name='DetailsModal' 
-          component={DetailsModal} 
+          component={DetailsModal}  
           options={{ headerShown: false }} />
       </Stack.Group>
     </Stack.Navigator>
@@ -32,12 +31,3 @@ export default function App() {
    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 32
-  },
-});
